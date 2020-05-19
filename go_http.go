@@ -1,3 +1,5 @@
+// ex> 주소창에 localhost:9090/?test=1234&test2=5678 입력
+
 package main
 
 import(
