@@ -26,6 +26,8 @@ func defaultHandler(w http.ResponseWriter,r *http.Request){
 
 func main(){
 	// 기본 url 핸들러 메소드 지정
+	// http를 통해 /에 접근하면 이 핸들러를 작동시키겠다는 의미!
+	// defaultHandler를 인수로 받음
 	http.HandleFunc("/",defaultHandler)
 	// 서버 시작
 	err:= http.ListenAndServe(":9090",nil)
