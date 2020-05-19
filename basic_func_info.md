@@ -1,5 +1,5 @@
-### http.ResponseWriter 파라미터: HTTP Response에 무언가를 쓸 수 있게 한다.
-### http.Request 파라미터: 입력된 Request요청을 검토할 수 있게 한다.
+- http.ResponseWriter 파라미터: HTTP Response에 무언가를 쓸 수 있게 한다.
+- http.Request 파라미터: 입력된 Request요청을 검토할 수 있게 한다.
 
 ### ListenAndServe()
 : 첫번째 파라미터로 포트 몇(숫자)에서 Request를 Listen할 것을 지정하고,
