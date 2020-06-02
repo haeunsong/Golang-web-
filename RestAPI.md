@@ -5,13 +5,13 @@ REST란, 웹에 존재하는 모든 자원(이미지, 동영상, DB 자원)에 �
 ## REST API 
 REST 특징을 지키면서 API를 제공하는 것
 
-# 구성
+## 구성
 1. 자원(Resource) - URI (정보의 자원 표현)
 2. 행위(Verb) - HTTP METHOD (GET'생성', POST'조회', PUT'수정', DELETE'삭제')
 3. 표현(Representations)
 URI로 주어나 목적어를 만들고, HTTP METHOD 로 동사를 만드는 개념.
 
-# URI 설계시 주의할 점
+## URI 설계시 주의할 점
 (Uniform Resource Indentifier)
 - 슬래시 구분자(/)는 계층 관계를 나타내는데 사용
 - URI 마지막 문자로 슬래시(/)를 포함하지 않는다.
@@ -20,13 +20,13 @@ URI로 주어나 목적어를 만들고, HTTP METHOD 로 동사를 만드는 개
 - URI 경로에는 소문자가 적합하다.
 - 파일확장자는 URI에 포함하지 않는다.
 
-# 대표적인 HTTP METHOD 4가지
+## 대표적인 HTTP METHOD 4가지
 - GET: 해당 리소스를 조회
 - POST: 해당 URL를 요청하면 리소스를 생성
 - PUT: 해당 리소스를 수정
 - DELETE: 해당 리소스를 삭제
 
-# 메시지
+## 메시지
 (HTTP header, body, 응답상태코드)
 header와 body에 포함된 메시지는 메시지를 처리하기 위한 충분한 정보를 포함한다.
 
@@ -35,7 +35,7 @@ header와 body에 포함된 메시지는 메시지를 처리하기 위한 충분
           요청 HTTP 헤더는 'Accept' 항목으로 응답 HTTP 헤더는 "Content-type' 으로 컨텐츠 타입 설명.
 - 응답상태코드: 리소스 요청에 대한 응답 가능(ex> 200,201,400.. 등등)
 
-# REST 장/단점
+## REST 장/단점
 - 장점
 - 언어와 플랫폼에 독립적
 - REST 가 지원하는 프레임워크나 언어등 도구들이 없어도 구현 가능
