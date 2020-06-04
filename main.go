@@ -21,7 +21,7 @@ const VerifyMessage = "verified"
 
 // 인증된 웹 요청만 허용
 // 인증이 확인되면 다음 핸들러로 넘어가고, 인증이 확인되지 않으면 로그인 페이지로 이동.
-// 만약 요청 경로가 ignore 에 등록된 URL이면 인증을 확인하지 않고 바로 다음 핸들로로 넘어간다.
+// 만약 요청 경로가 ignore 에 등록된 URL이면 인증을 확인하지 않고 바로 다음 핸들러로 넘어간다.
 func AuthHandler(next ex.HandlerFunc) ex.HandlerFunc {
 	ignore := []string{"/login", "/index.html"}
 	return func(c *ex.Context) {
